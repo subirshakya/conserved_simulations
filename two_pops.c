@@ -32,9 +32,9 @@ initialize() {
         0, 5100), c(
         4949, 9999));
     initializeMutationType(1, 0.5, "f", Q * 0);
-	  initializeMutationType(2, 0.5, "g", Q * -100, 10);
+    initializeMutationType(2, 0.5, "g", Q * -100, 10);
     initializeGenomicElementType(1, 1, 1);
-	  initializeGenomicElementType(2, 2, 1);
+    initializeGenomicElementType(2, 2, 1);
     initializeGenomicElement(2, 4950, 5049);
     initializeMutationRate(Q * 1.652e-08);
 
@@ -99,8 +99,8 @@ initialize() {
     // One row for each sampling episode.
     defineConstant("sampling_episodes", array(c(
         // pop, n_inds, time
-        c(0, 5, 0),
-        c(1, 5, 0)
+        c(0, 500, 0),
+        c(1, 500, 0)
     ), c(3, 2)));
 
     defineConstant("N", asInteger(_N/Q));
